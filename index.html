@@ -219,10 +219,18 @@
       </div>
     </div>
     <div class="content has-text-justified">
-    <p>
-    The core idea of this work is to learn robot manipulations by correctly predicting the impact of robot actions on the scene. We build the probabilistic point cloud prediction model within using an autoencoder formulation with deep neural networks. <b>Encoder</b>: In order to encode a set of point clouds to a vector of a latent space, we implement PointNet network as the point cloud encoder. We use a multilayer perceptron (MLP) as the action encoder. We then concatenate these high dimensional vectors from encoders as the input to the predictor, posterior, and prior of the probabilistic model. <b>Decoder (Predictor)</b>: To generate a set of predicted point clouds from the predictor network, we concatenate the latent variables with the outputs of the encoders. We use a FoldingNet network to warp a fixed 2D grid into the shape of the point clouds. <b>Posterior and prior network</b>: After concatenating the vectors from the PointNet networks and the action encoder, we use four MLPs to produce the distribution of the posterior and prior respectively.
-    </p>
-  </div>
+      <p>
+      The core idea of this work is to learn robot manipulations by correctly predicting the impact of robot actions on the scene. We build the probabilistic point cloud prediction model within using an autoencoder formulation with deep neural networks. <b>Encoder</b>: In order to encode a set of point clouds to a vector of a latent space, we implement PointNet network as the point cloud encoder. We use a multilayer perceptron (MLP) as the action encoder. We then concatenate these high dimensional vectors from encoders as the input to the predictor, posterior, and prior of the probabilistic model. <b>Decoder (Predictor)</b>: To generate a set of predicted point clouds from the predictor network, we concatenate the latent variables with the outputs of the encoders. We use a FoldingNet network to warp a fixed 2D grid into the shape of the point clouds. <b>Posterior and prior network</b>: After concatenating the vectors from the PointNet networks and the action encoder, we use four MLPs to produce the distribution of the posterior and prior respectively.
+      </p>
+    </div>
+    <br>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <img src="static/images/alg.jpg" class="interpolation-image" alt="Interpolate start reference image.">
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
