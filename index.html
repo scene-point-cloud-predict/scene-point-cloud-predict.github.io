@@ -234,7 +234,7 @@
     </div>
     <div class="content has-text-justified">
       <p>
-        In order to utilize the prediction model in a planning framework. We use a set of observed goal point clouds to specify the task goal, just like the designated goal RGB image.
+        In order to utilize the prediction model in a planning framework, we use a set of observed goal point clouds to specify the task goal, just like the designated goal RGB image. For a current scene, we obtain a point cloud observation. We initialize the set of action candidates by sampling M pick-and-place actions from a uniform distribution within the workspace. We then predict M point cloud representations resulting from these actions and evaluate each action through the Chamfer Distance cost function. Next, we select K actions with the lowest costs and fit a multivariate Gaussian distribution. We update the action candidates set by resampling M new actions from this Gaussian distribution. We repeat the prediction, evaluating, and Gaussian fitting procedures for n iterations, and select the action with the lowest loss for performing the task. Given that some tasks may require multistep actions or the possibility of action failure, we employ a greedy strategy. It repeats this optimization process after each action performed until the task succeeds or reaches the maximum step limitation.
       </p>
     </div>
   </div>
