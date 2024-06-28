@@ -151,10 +151,12 @@
           <p>
             Predicting scene evolution conditioned on robotic actions is a vital technique in modeling robot manipulations.
             Previous studies have primarily focused on learning spatiotemporally continuous actions like Cartesian displacements, thus applying them to planar-pushing tasks.
+            <br>
             In this letter, we propose a scene prediction model that learns higher-level robot actions, such as grasping and pick-and-place, and is applicable to planning such actions in rearrangement manipulations.
             The model takes partially observed point clouds (e.g., from a single camera) and robot pick-and-place actions to predict point clouds of future scenes.
             The model directly learns scene prediction using point cloud observation and representation, without requiring prior knowledge of object properties like cad models, pose, or instance segmentation.
             We train the model only on a synthetic dataset acquired entirely automatically with minimal human intervention.
+            <br>
             Our experiments validate that our model can substantially learn robot grasping and pick-and-place actions and show that, when integrated into a sample-based planning framework, predicting scenes in point clouds outperforms the image-based baseline in grasping and rearrangement manipulation.
             Moreover, results show that our method can be directly transferred to real-world environments without fine-tuning and show promising performance on a collection of 18 household objects.
           </p>
@@ -232,6 +234,8 @@
 
 
 <section class="section">
+
+
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <h2 class="title is-4">Examples of real world experiments (videos in 2x speed)</h2>
